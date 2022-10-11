@@ -1,15 +1,17 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Blogs from '../Components/Blogs';
+import Course from '../Components/Course';
 import ErrorPage from '../Components/ErrorPage';
 import Home from '../Components/Home';
 import Root from '../Components/Root';
 import Statistics from '../Components/Statistics';
-import Topics from '../Components/Topics';
+// import Topics from '../Components/Topics';
 
 const router = createBrowserRouter([{
     path: '/',
     element: <Root></Root>,
     errorElement: <ErrorPage></ErrorPage>,
+    loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
     children: [
         {
             index: true,
@@ -21,7 +23,7 @@ const router = createBrowserRouter([{
         },
         {
             path: '/topics',
-            element: <Topics></Topics>
+            element: <Course></Course>
         },
         {
             path: '/statistics',
