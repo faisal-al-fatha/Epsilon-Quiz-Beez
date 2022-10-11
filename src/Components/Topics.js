@@ -6,7 +6,7 @@ const Topics = () => {
     const topics = useContext(TopicContext)
     console.log(topics);
     return (
-        <div className='md:flex justify-center my-2 md:my-6'>
+        <div className='lg:flex justify-center my-2 md:my-6'>
             {
                 topics[0].map(topic => <Course key={topic.id} topic={topic}></Course>)
             }

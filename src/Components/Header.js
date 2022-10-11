@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div>
+        <div className='-z-50'>
             <div className="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0">
                 <div className="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
                     <svg
@@ -34,19 +35,19 @@ const Header = () => {
                             Start testing your skill by attending various quiz test today from our instructors.
                         </p>
                         <div className="flex items-center">
-                            <a
-                                href="/"
+                            <Link
+                                to="/topics"
                                 className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-rose-500 hover:bg-rose-700 focus:shadow-outline focus:outline-none"
                             >
                                 Get started
-                            </a>
-                            <a
-                                href="/"
+                            </Link>
+                            <Link
+                                href="/statistics"
                                 aria-label=""
                                 className="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700"
                             >
                                 Learn more
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

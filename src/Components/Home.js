@@ -4,7 +4,7 @@ import Topics from './Topics';
 
 const Home = () => {
     return (
-        <div>
+        <div className='z-0'>
             <Header></Header>
             <div className='py-9 px-12'>
                 <Topics></Topics>
