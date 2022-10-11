@@ -4,7 +4,6 @@ import { TopicContext } from './Root';
 
 const Topics = () => {
     const topics = useContext(TopicContext)
-    console.log(topics);
     return (
         <div className='lg:flex justify-center my-2 md:my-6'>
             {
