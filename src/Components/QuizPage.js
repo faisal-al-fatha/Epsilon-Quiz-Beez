@@ -1,21 +1,26 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Quiz from './Quiz';
 import { QuizContext } from './Root';
 
 const QuizPage = () => {
-    const [quizId] = useContext(QuizContext)
-    // const { name, questions } = quizData
+    const [quizId, setQuizId] = useContext(QuizContext)
+    const [quizData, setQuizdata] = useState([]);
+
     useEffect(() => {
         fetch(`https://openapi.programming-hero.com/api/quiz/${quizId}`)
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => setQuizdata(data.data))
     }, [])
 
+
+    const { name, questions, total } = quizData;
+    console.log(questions);
     return (
         <div>
-            <h3 className='text-xl font-semibold'> Quiz of </h3>
+            <h3 className='text-3xl font-semibold text-center my-6'> Quiz of {name}</h3>
+            <p className='text-center'>Total Questions : {total}</p>
             {
-                <Quiz></Quiz>
+                questions.map(question => <Quiz key={question.id} question={question}></Quiz>)
             }
         </div>
     );
