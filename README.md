@@ -1,17 +1,17 @@
-# Project Name:  Epsilon Quiz Beez
+## Project Name:  Epsilon Quiz Beez
 
-# Live Link Site: 'https://espsilon-quiz-beez.netlify.app/'
+### Live Link Site: 'https://espsilon-quiz-beez.netlify.app/'
 
 
-# Code link: 'https://github.com/programming-hero-web-course2/b6-quiz-crackerz-faisal-al-fatha'
+### Code link: 'https://github.com/programming-hero-web-course2/b6-quiz-crackerz-faisal-al-fatha'
 
-# Used Framework:
+### Used Framework:
 Tailqind, Daisy Ui, Kitwind
 
-# Used technology
+### Used technology
 react, font-awesome, react-router, react hot toast etc
 
-# API used for this project :
+### API used for this project :
 'https://openapi.programming-hero.com/api/quiz'
 &
 'https://openapi.programming-hero.com/api/quiz/${id}'
