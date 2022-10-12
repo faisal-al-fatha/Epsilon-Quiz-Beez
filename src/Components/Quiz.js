@@ -5,10 +5,10 @@ import toast, { Toaster } from 'react-hot-toast';
 import Validation from './validation';
 
 const Quiz = ({ quiz, i }) => {
-    const { options, id, question, correctAnswer } = quiz
+    const { options, question, correctAnswer } = quiz
     return (
         <div className='flex justify-center mb-5'>
-            <div className='card w-9/12 bg-pink-900 shadow-xl'>
+            <div className='card w-9/12  md:w-11/12 bg-pink-900 shadow-xl'>
                 <div className='card-body relative'>
 
 

@@ -1,14 +1,9 @@
 import React, { useContext } from 'react';
-import { Bar, XAxis, YAxis, BarChart, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { Bar, XAxis, YAxis, BarChart, CartesianGrid, Tooltip, Legend } from 'recharts';
 import { TopicContext } from './Root';
 
 const Statistics = () => {
     const topics = useContext(TopicContext);
-    const data = [];
-    topics.map(topic => data.push[topic])
-    console.log(topics[0]);
-
-
     return (
         <div>
             <BarChart className='my-12' width={930} height={450} data={topics[0]}>

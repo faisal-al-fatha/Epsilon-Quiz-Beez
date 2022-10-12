@@ -25,8 +25,9 @@ const Header = () => {
 
                         <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
                             Get justification
-                            <br className="hidden md:block" />
+                            <br className="block" />
                             of what {' '}
+                            <br className="block" />
                             <span className="inline-block text-deep-purple-accent-400">
                                 you've learned
                             </span>
