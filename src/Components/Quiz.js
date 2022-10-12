@@ -13,7 +13,7 @@ const Quiz = ({ quiz, i }) => {
 
 
 
-                    <h3 className="mb-5 text-lg font-medium text-gray-900">{i + 1}. {question.slice(3, -3)}  <button className='absolute top-5 right-5' onClick={() => toast(`${correctAnswer}`)}> <FontAwesomeIcon icon={faEye} /></button></h3>
+                    <h3 className="mb-5 text-lg font-medium text-gray-900">{i + 1}. {question.slice(3, -3)}  <button className='absolute top-5 right-5' onClick={() => toast(`Correct answer: ${correctAnswer}`)}> <FontAwesomeIcon icon={faEye} /></button></h3>
                     <ul className="grid gap-6 w-full md:grid-cols-2">
                         {
                             options.map(option => <Validation option={option} correctAnswer={correctAnswer}></Validation>
