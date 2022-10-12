@@ -17,7 +17,7 @@ const Statistics = () => {
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Bar dataKey="total" fill="#E97C9F" />
+                <Bar dataKey="total" fill="#701037" />
             </BarChart>
             <div> <h3 className='font-semibold font-4xl pl-5'>Figure: Total quizes in each topics</h3></div>
         </div>
